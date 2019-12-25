@@ -1,6 +1,22 @@
-.mainbody 
+.main-body 
 {
     margin-top:5vh;
     margin-left:2.5vh;
-    
+     display: grid;
+     grid-template-columns: 50% 50%;
+}
+.form-field 
+{
+    margin-bottom: 2vh;
+}
+.form-field>input 
+{
+    width: 45vh;
+    border-radius: 3.5px;
+    height: 3.5vh;
+}
+.form-field>button
+{
+    margin-left: 15vh;
+    margin-right: 15vh;
 }
