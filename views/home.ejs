@@ -24,7 +24,7 @@
                  <th>Action</th>
                 </tr>
                  <% for(let i=0;i<user.length;i++){ %>
-                    <tr><td><%= user[i].id%></td>  <td><%=user[i].Name%></td> <td><%=user[i].Highschool%></td> <td><%=user[i].Seniorsecondary%></td> <td><%=user[i].College%></td> <td><%=user[i].Branch%></td> <td><button><a href='/updateprofile/<%=user[i].id%>'>Edit</a></button></td><td><button>Delete</button></td> <td><Button>View Profile</Button></td>  </tr>        
+                    <tr><td><%= user[i].id%></td>  <td><%=user[i].Name%></td> <td><%=user[i].Highschool%></td> <td><%=user[i].Seniorsecondary%></td> <td><%=user[i].College%></td> <td><%=user[i].Branch%></td> <td><button><a href='/updateprofile/<%=user[i].id%>'>Edit</a></button></td><td><button onclick="deleteUser(<%=user[i].id%>)">Delete</button></td> <td><Button>View Profile</Button></td>  </tr>        
                    <%}%>
              </table>
             </div>
@@ -35,5 +35,6 @@
         <footer id="footer">
 
         </footer>
+        <script src='/js/deleteuser.js'></script>
     </body>
 </html>

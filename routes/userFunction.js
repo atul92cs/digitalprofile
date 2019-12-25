@@ -51,7 +51,7 @@ router.put('/',(req,res)=>{
       }
    });
 });
-router.delete('/:id',(req,res)=>{
+router.delete('/deleteuser/:id',(req,res)=>{
     const {id}=req.params;
     let sql='delete from user where id=?;delete from skill where userId=?';
     let query=db.query(sql,[id,id],(err,result)=>{
