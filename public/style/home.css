@@ -12,3 +12,29 @@ nav a:hover
 {
     color: red;
 }
+#main-body 
+{
+    margin-top:5vh;
+    margin-left:5vh;
+    margin-right: 5vh;
+    border: solid 1.5px black;
+    width: 125vh;
+}
+.user
+{
+    padding: 5vh 5vh 5vh 5vh;
+}
+th
+{
+    background-color: cornflowerblue;
+    margin-left: 2vh;
+    text-align: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+td 
+{
+    text-align: center;
+    padding-right: 2vh;
+    padding-left: 2vh;
+}

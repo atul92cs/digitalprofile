@@ -12,7 +12,6 @@
             <a href='/create'>Create Profile</a>
         </nav>
         <section id='main-body'>
-            <ul>
             <div class="user">
              <table>
                  <tr>
@@ -22,13 +21,13 @@
                  <th>Senior secondary</th>
                  <th>College</th>
                  <th>Branch</th>
+                 <th>Action</th>
                 </tr>
                  <% for(let i=0;i<user.length;i++){ %>
                     <tr><td><%= user[i].id%></td>  <td><%=user[i].Name%></td> <td><%=user[i].Highschool%></td> <td><%=user[i].Seniorsecondary%></td> <td><%=user[i].College%></td> <td><%=user[i].Branch%></td> <td><button>Edit</button></td><td><button>Delete</button></td> <td><Button>View Profile</Button></td>  </tr>        
                    <%}%>
              </table>
             </div>
-           </ul>
             <div class="info-section">
 
             </div>

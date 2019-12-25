@@ -32,9 +32,9 @@ router.get('/',(req,res)=>{
      }
    });
 });
-router.put('/:id',(req,res)=>{
-   const {id}=req.params;
-   const {name,highschool,seniorsecondary,college,branch}=req.body;
+router.put('/',(req,res)=>{
+   
+   const {id,name,highschool,seniorsecondary,college,branch}=req.body;
    let sql='update user set Name=?,Highschool=?,Seniorsecondary=?,College=?,Branch=? where id=?';
    let query=db.query(sql,[name,highschool,seniorsecondary,college,branch,id],(err,result)=>{
       if(err)
