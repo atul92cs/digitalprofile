@@ -1,7 +1,13 @@
 const express=require('express');
 const db=require('../config/database');
 const router=express.Router();
-
+router.get('/create',(req,res)=>{
+    res.render('createprofile');
+});
+router.get('/updateprofile/:id',(req,res)=>{
+   const {id}=req.params;
+   res.render('editprofile',{id:id});
+});
 router.get('/',(req,res)=>{
     let sql='select * from user';
     let query=db.query(sql,(error,response)=>{
