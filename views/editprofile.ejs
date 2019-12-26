@@ -10,22 +10,22 @@
             <div class="form-section">
                <form action="/user/" method="PUT">
                 <div class="form-field">
-                    <input type="text" name="id" placeholder="id">
+                    <input type="text" name="id" id='id' placeholder="id" readonly>
                 </div>
                 <div class="form-field">
-                     <input type="text" name="name" placeholder="Name">
+                     <input type="text" name="name" id="name" placeholder="Name">
                 </div>
                 <div class="form-field">
-                    <input type="text" name="highschool" placeholder="Highschool">
+                    <input type="text" name="highschool" id="highschool" placeholder="Highschool">
                 </div>
                 <div class="form-field">
-                     <input type="text" name="seniorsecondary" placeholder="Senior sceondary">
+                     <input type="text" name="seniorsecondary" id="seniorsecondary" placeholder="Senior sceondary">
                 </div>
                 <div class="form-field">
-                     <input type="text" name="college" placeholder="College">
+                     <input type="text" name="college" id="college" placeholder="College">
                 </div>
                 <div class="form-field">
-                    <input type="text" name="branch" placeholder="Branch">
+                    <input type="text" name="branch" id="branch" placeholder="Branch">
                 </div>
                 <div class="form-field">
                     <button type="submit">Update</button>
@@ -36,5 +36,6 @@
 
             </div>
         </div>
+        <script src='/js/getUser.js'></script>
     </body>
 </html>

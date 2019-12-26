@@ -32,6 +32,25 @@ router.get('/',(req,res)=>{
      }
    });
 });
+router.get('/:id',(req,res)=>{
+  const {id}=req.params;
+  let sql='select * from user where id=?;select * from skill where userId=?';
+  let query=db.query(sql,[id,id],(err,response)=>{
+    if(!err)
+    {
+         res.status(200).json({
+           user:response[0][0],
+           skills:response[1]
+         });
+    }
+    else
+    {
+         res.status(401).json({
+           error:err
+         });
+    }
+  });
+});
 router.put('/',(req,res)=>{
    
    const {id,name,highschool,seniorsecondary,college,branch}=req.body;

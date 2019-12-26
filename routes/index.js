@@ -6,7 +6,7 @@ router.get('/create',(req,res)=>{
 });
 router.get('/updateprofile/:id',(req,res)=>{
    const {id}=req.params;
-   res.render('editprofile',{id:id});
+   res.render('editprofile');
 });
 router.get('/',(req,res)=>{
     let sql='select * from user';
@@ -29,7 +29,7 @@ router.get('/',(req,res)=>{
 
     });
 });
-router.get('/:id',(req,res)=>{
+router.get('/getuser/:id',(req,res)=>{
     const {id}=req.params;
     let sql='select * from user where id=?;select * from skill where userId=?';
     
