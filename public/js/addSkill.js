@@ -10,7 +10,16 @@ addSkill=e=>{
     xhr.open('POST',url,true);
     xhr.setRequestHeader('Content-type','application/json');
     xhr.onload=()=>{
-        console.log(xhr.responseText);
+      if(xhr.readyState==4||xhr.status==200)
+      {
+         document.getElementById('skill-name').value='';
+         window.location.reload();
+      }
+      else
+      {
+          document.getElementById('skill-message').innerText='Error occured';
+          document.getElementById('skill-name').value='';
+      }
     }
     xhr.send(parameters);
 
