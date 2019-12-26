@@ -3,29 +3,33 @@
     <head>
         <meta charset="utf-8">
         <title>Digital profile</title>
-        <link rel="stylesheet" href="../style/editprofile.css">
+        <link rel="stylesheet" href="/style/editprofile.css">
     </head>
     <body>
         <div class="main-body">
+            
             <div class="form-section">
+                <div class="form-message-section">
+                    <h4 id='message'></h4>
+                </div>
                <form action="/user/" method="PUT">
                 <div class="form-field">
                     <input type="text" name="id" id='id' placeholder="id" readonly>
                 </div>
                 <div class="form-field">
-                     <input type="text" name="name" id="name" placeholder="Name">
+                     <input type="text" name="name" id="name" placeholder="Name" required>
                 </div>
                 <div class="form-field">
-                    <input type="text" name="highschool" id="highschool" placeholder="Highschool">
+                    <input type="text" name="highschool" id="highschool" placeholder="Highschool" required>
                 </div>
                 <div class="form-field">
-                     <input type="text" name="seniorsecondary" id="seniorsecondary" placeholder="Senior sceondary">
+                     <input type="text" name="seniorsecondary" id="seniorsecondary" placeholder="Senior sceondary" required>
                 </div>
                 <div class="form-field">
-                     <input type="text" name="college" id="college" placeholder="College">
+                     <input type="text" name="college" id="college" placeholder="College" required>
                 </div>
                 <div class="form-field">
-                    <input type="text" name="branch" id="branch" placeholder="Branch">
+                    <input type="text" name="branch" id="branch" placeholder="Branch" required>
                 </div>
                 <div class="form-field">
                     <button type="submit">Update</button>
@@ -33,9 +37,22 @@
             </form>
             </div>
             <div class="skill-section">
-
+                <div class="skill-message-section">
+                    <h4 id="skill-message"></h4>
+                </div>
+                <div class="skill-form-section">
+                    <form id="skill-form">
+                       <div class="form-field">
+                        <input type="text" id='skill-name' name="name" placeholder="Skill"/>
+                       </div>
+                       <div class="form-field">
+                           <button type="submit">Add</button>
+                       </div>
+                    </form>
+                </div>
             </div>
         </div>
         <script src='/js/getUser.js'></script>
+        <script src="/js/addSkill.js"></script>
     </body>
 </html>

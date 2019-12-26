@@ -16,10 +16,22 @@ getUser=()=>{
            document.getElementById('seniorsecondary').value=result.user.Seniorsecondary;
            document.getElementById('college').value=result.user.College;
            document.getElementById('branch').value=result.user.Branch;
+           const skills=result.skills;
+          
+           if(skills.length<=0)
+           {
+             document.getElementById('skill-message').innerText='skill not added please add skill';
+           }
+           else
+           {
+             skills.map(skill=>{
+               console.log(skill);
+             })
+           }
           }
         else 
         {
-          console.log(xhr.responseText);
+         document.getElementById('message').innerHTML=xhr.responseText;
         }
     }
     xhr.send();

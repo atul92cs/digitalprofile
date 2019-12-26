@@ -3,7 +3,7 @@ const db=require('../config/database');
 const router=express.Router();
 router.post('/add',(req,res)=>{
     const {id,skill}=req.body;
-    let body={userid:id,Skill:skill};
+    let body={userId:id,Skill:skill};
     let sql='INSERT INTO skill SET ?';
     let query=db.query(sql,body,(err,result)=>{
         if(err)

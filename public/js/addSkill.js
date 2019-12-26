@@ -1,0 +1,20 @@
+addSkill=e=>{
+    e.preventDefault();
+    const skillname=document.getElementById('skill-name').value;
+    const link=window.location.toString();
+    const id =link.substring(link.lastIndexOf('/')+1);
+    let xhr=new XMLHttpRequest();
+    let data={id:id,skill:skillname};    
+    let parameters=JSON.stringify(data);
+    let url='/skill/add';
+    xhr.open('POST',url,true);
+    xhr.setRequestHeader('Content-type','application/json');
+    xhr.onload=()=>{
+        console.log(xhr.responseText);
+    }
+    xhr.send(parameters);
+
+}
+
+document.getElementById('skill-form').addEventListener('submit',addSkill);
+
