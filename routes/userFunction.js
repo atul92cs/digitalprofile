@@ -50,7 +50,7 @@ router.get('/:id',(req,res)=>{
     }
   });
 });
-router.put('/',(req,res)=>{
+router.put('/updateuser',(req,res)=>{
    
    const {id,name,highschool,seniorsecondary,college,branch}=req.body;
    let sql='update user set Name=?,Highschool=?,Seniorsecondary=?,College=?,Branch=? where id=?';

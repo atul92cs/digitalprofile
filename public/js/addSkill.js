@@ -25,6 +25,5 @@ addSkill=e=>{
     xhr.send(parameters);
 
 }
-
 document.getElementById('skill-form').addEventListener('submit',addSkill);
 
