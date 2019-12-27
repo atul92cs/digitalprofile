@@ -6,7 +6,17 @@ router.get('/create',(req,res)=>{
 });
 router.get('/updateprofile/:id',(req,res)=>{
    const {id}=req.params;
-   res.render('updateprofile');
+   let sql='select * from skill where userId=?';
+   let query=db.query(sql,[id],(err,result)=>{
+        if(err)
+        {
+             res.render('updateprofile',{msg:err,layout:'editprofile'});
+        }
+        else 
+        {
+             res.render('updateprofile',{skills:result,layout:'editprofile'});
+        }
+   });
 });
 router.get('/',(req,res)=>{
     let sql='select * from user';

@@ -34,13 +34,12 @@ router.get('/',(req,res)=>{
 });
 router.get('/:id',(req,res)=>{
   const {id}=req.params;
-  let sql='select * from user where id=?;select * from skill where userId=?';
+  let sql='select * from user where id=?';
   let query=db.query(sql,[id,id],(err,response)=>{
     if(!err)
     {
          res.status(200).json({
-           user:response[0][0],
-           skills:response[1]
+           user:response[0]
          });
     }
     else

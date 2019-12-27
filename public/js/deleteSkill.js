@@ -11,7 +11,7 @@ deleteSkill=(id)=>{
         else 
         {
             document.getElementById('skill-message').innerText='error occured';
-            getUser();
+           
         }
     }
     xhr.send(null);
