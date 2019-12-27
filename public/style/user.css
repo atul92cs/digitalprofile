@@ -1,0 +1,32 @@
+.mainbody 
+{
+    margin-right: 95vh;
+    margin-left: 95vh;
+    margin-top: 5vh;
+    border: black solid 1.5px;
+    border-radius: 2.5px;
+}
+.info-section 
+{
+    margin-left: 35vh;
+    margin-right: 35vh;
+}
+.skill-section 
+{
+    margin-left:35vh;
+    margin-right: 35vh;
+}
+th
+{
+    background-color: cornflowerblue;
+    margin-left: 2vh;
+    text-align: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+td 
+{
+    text-align: center;
+    padding-right: 2vh;
+    padding-left: 2vh;
+}

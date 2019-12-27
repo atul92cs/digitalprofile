@@ -46,11 +46,11 @@ router.get('/getuser/:id',(req,res)=>{
     let query=db.query(sql,[id,id],(err,response)=>{
        if(err)
        {
-           res.render('viewuser',{error:err});
+           res.render('viewuser',{error:err,layout:'viewprofile'});
        }
        else 
        {
-            res.render('viewuser',{users:response[0],skills:response[1]});
+            res.render('viewuser',{users:response[0],skills:response[1],layout:'viewprofile'});
         
        }
     });
