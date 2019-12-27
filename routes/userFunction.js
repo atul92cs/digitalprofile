@@ -91,13 +91,18 @@ router.get('/getinfo/:id',(req,res)=>{
   const {id}=req.params;
   let sql='select * from user where id=?;select * from skill where userId=?';
   let query=db.query(sql,[id,id],(err,response)=>{
-    if(err)
+    if(!err)
     {
-       res.render('viewuser',{user:response[0],skills:response[1]});
+       res.status(200).json({
+         user:response[0],
+         skills:response[1]
+       });
     }
     else
     {
-        res.render('viewuser',{error:err});
+       res.status(401).json({
+         error:err
+       });
     }
   });
 });

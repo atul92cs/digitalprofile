@@ -50,7 +50,8 @@ router.get('/getuser/:id',(req,res)=>{
        }
        else 
        {
-            res.render('viewuser',{user:response[0][0],skills:response[1]});
+            res.render('viewuser',{users:response[0],skills:response[1]});
+        
        }
     });
 });
