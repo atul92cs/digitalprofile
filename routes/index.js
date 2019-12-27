@@ -46,13 +46,11 @@ router.get('/getuser/:id',(req,res)=>{
     let query=db.query(sql,[id,id],(err,response)=>{
        if(err)
        {
-            res.status(401).json({
-                msg:err
-            });
+           res.render('viewuser',{error:err});
        }
        else 
        {
-            res.render('updateprofile',{user:response[0][0],skills:response[1]});
+            res.render('viewuser',{user:response[0][0],skills:response[1]});
        }
     });
 });
