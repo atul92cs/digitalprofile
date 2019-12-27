@@ -13,7 +13,16 @@ addSkill=e=>{
       if(xhr.readyState==4||xhr.status==200)
       {
          document.getElementById('skill-name').value='';
-         window.location.reload();
+          let list=document.getElementById('list');
+          let listelement=document.createElement('li');
+          let skill=document.createTextNode(data.skill);
+          let button=document.createElement('button');
+          button.textContent='delete';
+          button.onclick=deleteSkill(skill.id);
+          listelement.appendChild(skill);
+          listelement.appendChild(button);
+          list.appendChild(listelement);
+          
       }
       else
       {

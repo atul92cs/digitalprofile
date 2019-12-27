@@ -25,3 +25,8 @@
     margin-left: 15vh;
     margin-right: 15vh;
 }
+.skill-list 
+{
+    list-style-type: none;
+    margin-bottom: 2vh;
+}

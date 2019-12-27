@@ -1,0 +1,26 @@
+<div id="main-body">
+   <div class="user">
+        <table>
+                 <tr>     
+                 <th>Id</th>
+                 <th>Name</th>
+                 <th>Highschool</th>
+                 <th>Senior secondary</th>
+                 <th>College</th>
+                 <th>Branch</th>
+                 <th>Action</th>
+                </tr>
+             {{#each user}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.Name}}</td>
+                    <td>{{this.Highschool}}</td>
+                    <td>{{this.Seniorsecondary}}</td>
+                    <td>{{this.College}}</td>
+                    <td>{{this.Branch}}</td>
+                    <td><button onclick="deleteUser({{this.id}})">Delete User</button> &nbsp; <button onclick="viewProfile({this.id})">View profile</button> &nbsp; <button onclick="editProfile(id)">Edit Profile</button></td>
+                </tr>
+             {{/each}}
+         </table>
+   </div>
+</div>

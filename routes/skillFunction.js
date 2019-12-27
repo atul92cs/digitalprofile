@@ -34,8 +34,10 @@ router.post('/add',(req,res)=>{
           else 
           {
               res.status(200).json({
-                  msg:'skill deleted'
+                  msg:'skill deleted',
+                  result:result
               });
+              console.log(result);
           }
       });
   });

@@ -6,7 +6,7 @@ router.get('/create',(req,res)=>{
 });
 router.get('/updateprofile/:id',(req,res)=>{
    const {id}=req.params;
-   res.render('editprofile');
+   res.render('updateprofile');
 });
 router.get('/',(req,res)=>{
     let sql='select * from user';
@@ -42,7 +42,7 @@ router.get('/getuser/:id',(req,res)=>{
        }
        else 
        {
-            res.render('user',{user:response[0][0],skill:response[1]});
+            res.render('updateprofile',{user:response[0][0],skills:response[1]});
        }
     });
 });

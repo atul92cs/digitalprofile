@@ -1,0 +1,46 @@
+<div class="main-body">
+    <div class="form-section">
+        <div class="message-section">
+            <h4 id="form-message"></h4>
+        </div>
+        <form action="">
+            <div class="form-field">
+                <input type="text" name="id" id="id" readonly/>
+            </div>
+            <div class="form-field">
+                <input type="text" id="name" name="name"/>
+            </div>
+            <div class="form-field">
+                <input type="text" name="highschool" id="highschool">
+            </div>
+            <div class="form-field">
+                <input type="text" name="seniorsecondary" id="seniorsecondary">
+            </div>
+            <div class="form-field">
+                   <button type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+    <div class="skill-section">
+                <div class="skill-message-section">
+                    <h4 id="skill-message"></h4>
+                </div>
+                <div class="skill-form-section">
+                    <form id="skill-form">
+                       <div class="form-field">
+                        <input type="text" id='skill-name' name="name" placeholder="Skill"/>
+                       </div>
+                       <div class="form-field">
+                           <button type="submit">Add</button>
+                       </div>
+                    </form>
+                </div>
+                <div class="user-skill-list">
+                   <ul class="skill-list">
+                       {{#each skills}}
+                       <li class="list">{{this.Skill}}</li>
+                       {{/each}}
+                   </ul>
+                </div>
+    </div>
+</div>
