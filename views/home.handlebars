@@ -18,7 +18,7 @@
                     <td>{{this.Seniorsecondary}}</td>
                     <td>{{this.College}}</td>
                     <td>{{this.Branch}}</td>
-                    <td><button onclick="deleteUser({{this.id}})">Delete User</button> &nbsp; <button onclick="viewProfile({this.id})">View profile</button> &nbsp; <button onclick="editProfile(id)">Edit Profile</button></td>
+                    <td><button onclick="deleteUser({{this.id}})">Delete User</button> <a href='/getuser/{{this.id}}'><button>View profile</button></a><a href='/updateprofile/{{this.id}}'><button>Edit Profile</button></a></td>
                 </tr>
              {{/each}}
          </table>
