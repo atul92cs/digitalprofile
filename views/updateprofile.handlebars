@@ -17,6 +17,12 @@
                 <input type="text" name="seniorsecondary" id="seniorsecondary">
             </div>
             <div class="form-field">
+                <input type="text" name='college' id="college">
+            </div>
+            <div class="form-field">
+                <input type="text" name="branch" id="branch">
+            </div>
+            <div class="form-field">
                    <button type="submit">Update</button>
             </div>
         </form>
@@ -38,7 +44,7 @@
                 <div class="user-skill-list">
                    <ul class="skill-list">
                        {{#each skills}}
-                       <li class="list">{{this.Skill}} &nbsp; <button>Delete</button></li>
+                       <li class="list">{{this.Skill}} &nbsp; <button onclick="deleteSkill({{this.id}})">Delete</button></li>
                        {{/each}}
                    </ul>
                 </div>
