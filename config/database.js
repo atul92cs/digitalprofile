@@ -1,7 +1,7 @@
-const mysql=require('mysql');
+const mysql=require('mysql2');
 const db=mysql.createConnection({
    host:'remotemysql.com',
-   post:'3306',                        /* Database configuration for the project */
+   port:'3306',                        /* Database configuration for the project */
    user:'EhmKaxRNsZ',
    password:'yB9oc5o5l2',
    database:'EhmKaxRNsZ',
