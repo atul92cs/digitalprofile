@@ -2,10 +2,6 @@ const express=require('express');
 const router=express.Router();
 const db=require('../config/database');
  
-db.connect((error)=>{
-  if(error) throw error;
-  console.log('database connected');
-});
 router.get('/',(req,res)=>{
    let sql='SELECT * FROM user';
    let query=db.query(sql,(err,result)=>{

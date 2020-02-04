@@ -1,5 +1,6 @@
 const express=require('express');
 const db=require('../config/database');
+
 const router=express.Router();
 router.get('/create',(req,res)=>{
     res.render('createprofile',{layout:'createlayout'});

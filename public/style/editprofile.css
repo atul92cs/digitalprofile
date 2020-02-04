@@ -1,24 +1,19 @@
-.main-body 
-{
-    margin-top:5vh;
-    margin-left:2.5vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+
 .form-section
 {
-    margin-left: 15vh;
+    margin-top:5vh;
+    text-align: center;
 }
 .form-field 
 {
     margin-bottom: 2vh;
     
 }
-.form-field>input 
+.form-field input 
 {
     width: 45vh;
     border-radius: 3.5px;
-    height: 3.5vh;
+    height: 4.5vh;
 }
 .form-field>button
 {
@@ -29,4 +24,34 @@
 {
     list-style-type: none;
     margin-bottom: 2vh;
+}
+.skill-section
+{
+    text-align: center;
+    margin-left: 38vw;
+    margin-right: 38vw;
+}
+#footer 
+{
+    margin-top:5vh;
+    padding:5vw 10vh 5vw 10vh;
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
+nav 
+{
+    text-align: center;
+    background-color: brown;
+    padding: 3vh 5vw 3vh 5vw;
+}
+nav a 
+{
+    text-decoration: none;
+    color: black;
+    
+}
+nav a:hover
+{
+    color: white;
 }

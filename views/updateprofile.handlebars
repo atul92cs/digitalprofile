@@ -1,4 +1,4 @@
-<div class="main-body">
+   
     <div class="form-section">
         <div class="message-section">
             <h4 id="form-message"></h4>
@@ -27,6 +27,7 @@
             </div>
         </form>
     </div>
+    <hr>
     <div class="skill-section">
                 <div class="skill-message-section">
                     <h4 id="skill-message"></h4>
@@ -41,12 +42,16 @@
                        </div>
                     </form>
                 </div>
+                
+                <h3>Skill Set</h3>
                 <div class="user-skill-list">
-                   <ul class="skill-list">
+                   <table class="skill-list">
                        {{#each skills}}
-                       <li class="list">{{this.Skill}} &nbsp; <button onclick="deleteSkill({{this.id}})">Delete</button></li>
+                       <tr class="list"><td>{{this.Skill}}</td> <td> <button onclick="deleteSkill({{this.id}})">Delete</button></td></tr>
                        {{/each}}
-                   </ul>
+                   </table>
                 </div>
     </div>
-</div>
+    <footer id="footer">
+        <p>&copy; Digital Profile</p>
+    </footer>
