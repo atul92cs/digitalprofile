@@ -2,6 +2,7 @@
 {
  margin-left: 25vh;
  margin-right: 25vh;
+ margin-top: 5vh;
  border: 1.5px solid black;
  border-radius: 1.5px;  
  padding: 5vh 5vw 5vh 5vw; 
@@ -19,4 +20,27 @@ td
     text-align: center;
     padding-right: 2vh;
     padding-left: 2vh;
+}
+#navbar 
+{
+    text-align: center;
+    background-color: brown;
+    padding: 3vh 5vw 3vh 5vw;
+}
+#navbar a 
+{
+    text-decoration: none;
+    color: black;
+}
+#navbar a:hover
+{
+    color: white;
+}
+#footer 
+{
+    margin-top: 26vh;
+    background-color: brown;
+    color: white;
+    padding: 5vh 5vw 5vh 5vw;
+    text-align: center;
 }
