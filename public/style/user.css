@@ -1,20 +1,10 @@
-.mainbody 
+.main-body 
 {
-    margin-right: 95vh;
-    margin-left: 95vh;
-    margin-top: 5vh;
-    border: black solid 1.5px;
-    border-radius: 2.5px;
-}
-.info-section 
-{
-    margin-left: 35vh;
-    margin-right: 35vh;
-}
-.skill-section 
-{
-    margin-left:35vh;
-    margin-right: 35vh;
+ margin-left: 25vh;
+ margin-right: 25vh;
+ border: 1.5px solid black;
+ border-radius: 1.5px;  
+ padding: 5vh 5vw 5vh 5vw; 
 }
 th
 {

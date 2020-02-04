@@ -51,7 +51,7 @@ router.get('/getuser/:id',(req,res)=>{
        }
        else 
        {
-            res.render('viewuser',{users:response[0],skills:response[1],layout:'viewprofile'});
+            res.render('viewuser',{user:response[0],skills:response[1],layout:'viewprofile'});
         
        }
     });

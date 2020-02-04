@@ -1,24 +1,25 @@
-<div class="mainbody">
+     <div class="main-body">
     <div class="info-section">
-      {{#each users}}
-      <p>Name:{{this.Name}}</p>
-      <p>College:{{this.College}}({{this.Branch}})</p>
-      <p>Highschool:{{this.Highschool}}</p>
-      <p>Seniorseconadry:{{this.Seniorsecondary}}</p>
-      {{/each}}
+        {{#each user}}
+         <p>Name:{{this.Name}}</p>
+          <p>Highschool:{{this.Highschool}}</p>
+          <p>Seniorsecondary:{{this.Seniorsecondary}}</p>
+          <p>College:{{this.College}} ({{this.Branch}})</p>
+        {{/each}}
     </div>
+     <hr>
     <div class="skill-section">
        <table>
            <tr>
                <th>Id</th>
                <th>Skill</th>
            </tr>
-            {{#each skills}}
-             <tr>
-                 <td>{{this.id}}</td>
-                 <td>{{this.Skill}}</td>
-             </tr>
-            {{/each}}
+           {{#each skills}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.Skill}}</td>
+            </tr>
+           {{/each}}
        </table>
     </div>
-</div>
+    </div>
