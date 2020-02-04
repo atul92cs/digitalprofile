@@ -1,28 +1,50 @@
+body
+{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+#main-header
+{
+    background-color: coral;
+    color: #fff;
+    text-align: center;
+}
+
+.container 
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 nav 
 {
     text-align: center;
-    
+    background-color: brown;
+    padding: 3vh 5vw 3vh 5vw;
 }
 nav a 
 {
     text-decoration: none;
     color: black;
+    
 }
 nav a:hover
 {
-    color: red;
+    color: white;
 }
 #main-body 
 {
     margin-top:5vh;
-    margin-left:5vh;
-    margin-right: 5vh;
-    border: solid 1.5px black;
-    width: 125vh;
-}
-.user
-{
+    margin-bottom: 5vh;
     padding: 5vh 5vh 5vh 5vh;
+    margin-left: 15vw;
+    margin-right: 15vw; 
+    border: 1.5px solid black;
+    border-radius: 1.5px;
 }
 th
 {
@@ -37,4 +59,12 @@ td
     text-align: center;
     padding-right: 2vh;
     padding-left: 2vh;
+}
+#footer 
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 45vh;
 }
