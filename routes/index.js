@@ -2,7 +2,7 @@ const express=require('express');
 const db=require('../config/database');
 const router=express.Router();
 router.get('/create',(req,res)=>{
-    res.render('createprofile');
+    res.render('createprofile',{layout:'createlayout'});
 });
 router.get('/updateprofile/:id',(req,res)=>{
    const {id}=req.params;
